@@ -29,7 +29,7 @@ header .menu-nav{
 }
 
 
-.load {
+/* .load {
     opacity: .9;
     display: flex;
     align-items: center;
@@ -72,7 +72,7 @@ header .menu-nav{
     80% {
         background-position: 0% 50%, 50% 50%, 100% 100%
     }
-}
+} */
 
 header {
     padding-left: 100px;
@@ -108,10 +108,34 @@ header .hrightSide .hrsmainMenu a {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 18px;
+
+    display: inline-block;
+    position: relative;
+    transition: 0.4s all ease;
 }
 
 header .hrightSide .hrsmainMenu a:hover{
-    border-bottom: 1.5px solid #fff;
+    /* border-bottom: 1.5px solid #fff; */
+    color: #fff;
+    transition: 0.4s all ease;
+}
+
+header .hrightSide .hrsmainMenu a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -50px;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+header .hrightSide .hrsmainMenu a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 header .hrightSide .hrssocialLinks {
@@ -879,14 +903,14 @@ footer .footerAll .fasecondPart img {
         margin-top: 40px;
     }
 
-    nav .tootle-menu #toggle-bar{
+    header .menu-nav .tootle-menu #toggle-bar{
         right: 30px;
         top: -11px;
         position: absolute;
         font-size: 29px;
         color: #fff;
     }
-    nav .mainMenu{
+    header .menu-nav .mainMenu{
         background-color: #fff;
         margin-top: 60px;
         position: fixed;
@@ -895,21 +919,21 @@ footer .footerAll .fasecondPart img {
         height: auto;
         padding: 20px;
     }
-    nav .mainMenu li{
+    header .menu-nav .mainMenu li{
         list-style: none;
         padding: 15px 15px 15px 0px;
         border-bottom: 1px solid #390161;
         margin-right: 40px;
     }
 
-    nav .mainMenu li a{
+    header .menu-nav .mainMenu li a{
         text-decoration: none;
         color: #390161;
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
     }
 
-    nav .mainMenu .mmSocials{
+    header .menu-nav .mainMenu .mmSocials{
         display: flex;
         gap: 0px;
         justify-content: center;
@@ -917,11 +941,11 @@ footer .footerAll .fasecondPart img {
         text-align: center;
     }
 
-    nav .mainMenu .mmSocials li{
+    header .menu-nav .mainMenu .mmSocials li{
         border: none;
     }
 
-    nav .mainMenu .mmSocials li a i{
+    header .menu-nav .mainMenu .mmSocials li a i{
         font-size: 19px;
     }
 }
