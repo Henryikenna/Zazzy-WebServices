@@ -102,7 +102,7 @@ header .hrightSide .hrssocialLinks a {
   font-size: 18px;
 }
 
-header .hrightSide .hrssocialLinks .blinee{
+header .hrightSide .hrssocialLinks .blinee {
   color: #fff;
 }
 header .hrightSide .hrssocialLinks .phno {
@@ -110,10 +110,9 @@ header .hrightSide .hrssocialLinks .phno {
   font-family: "Montserrat", sans-serif;
 }
 
-header .hrightSide .hrssocialLinks .phno span{
+header .hrightSide .hrssocialLinks .phno span {
   font-size: 14.5px;
   font-weight: 600;
-
 }
 
 header .hrightSide .hrssocialLinks .phno i {
@@ -122,7 +121,7 @@ header .hrightSide .hrssocialLinks .phno i {
   font-size: 15px;
 }
 
-.abfirstSec .abfsfirstText {
+.contfirstSec .contfirstText {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #fff;
@@ -132,38 +131,101 @@ header .hrightSide .hrssocialLinks .phno i {
   text-align: center;
 }
 
-.absecondSec {
-  padding: 50px 100px;
-  background-color: #fff;
-  background-size: cover;
-}
-
-.absecondSec p {
-  color: #5e595f;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-}
-
-.absecondSec .abssLink a {
-  text-decoration: none;
-  color: #3d0069;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  transition: 0.25s all ease;
-}
-
-.absecondSec .abssLink a:hover {
-  color: #8904e8;
-}
-
-/* .sixthSec .siseMain {
-  padding: 20px 100px;
+.contsecondSec {
+  background: #fff;
+  padding: 70px 200px;
   display: flex;
   gap: 250px;
   align-items: center;
-} */
+  justify-content: center;
+}
+
+.contsecondSec .cssLeft {
+  display: block;
+}
+
+.contsecondSec .cssLeft .csslItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.contsecondSec .cssLeft .csslItem i {
+  color: #4b0082;
+  font-size: 22px;
+}
+
+.contsecondSec .cssLeft .csslItem span {
+  color: #3d0069;
+  font-size: 20px;
+}
+
+.contsecondSec .cssRight .cssrForm form .cssrfinputTitle {
+  display: block;
+  padding-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #3d0069;
+}
+
+.contsecondSec .cssRight .cssrForm form .cssrfinputTitle .redasterisk {
+  color: red;
+  font-weight: 400;
+}
+
+.contsecondSec .cssRight .cssrForm form .cssrfGroup1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contsecondSec .cssRight .cssrForm form .cssrfGroup1 input {
+  /* width: 165px; */
+  width: 220px;
+  height: 35px;
+  border: 1px solid #a8a7d4;
+  border-radius: 4px;
+  outline: none;
+  background-color: #ebe6fb;
+  padding-left: 10px;
+  color: #2e004f;
+}
+.contsecondSec .cssRight .cssrForm form .cssrfGroup2 input {
+  width: calc(220px * 2 + 33px);
+  height: 35px;
+  border: 1px solid #a8a7d4;
+  border-radius: 4px;
+  outline: none;
+  background-color: #ebe6fb;
+  padding-left: 10px;
+  color: #2e004f;
+}
+.contsecondSec .cssRight .cssrForm form .cssrfGroup2 textarea {
+  width: calc(220px * 2 + 33px);
+  height: 100px;
+  border: 1px solid #a8a7d4;
+  border-radius: 4px;
+  outline: none;
+  background-color: #ebe6fb;
+  padding-left: 10px;
+  padding-top: 10px;
+  resize: vertical;
+  color: #2e004f;
+}
+.contsecondSec .cssRight .cssrForm form button {
+  width: calc(220px * 2 + 46px);
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #4b0082;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .sixthSec .siseMain {
   padding: 20px 0px;
   display: flex;
@@ -312,7 +374,7 @@ footer .footerAll .fasecondPart img {
   header .menu-nav .mainMenu li i {
     color: #390161;
     padding-right: 5px;
-}
+  }
 
   header .menu-nav .mainMenu .mmSocials {
     display: flex;
@@ -359,20 +421,88 @@ footer .footerAll .fasecondPart img {
     align-items: center;
     display: flex;
     font-family: "Montserrat", sans-serif;
-}
+  }
 
-.menu-nav .mainMenu .mmphnom i {
+  .menu-nav .mainMenu .mmphnom i {
     transform: scaleX(-1);
     color: #390161;
     font-size: 15px;
     padding-left: 5px;
-}
+  }
 
-.menu-nav .mainMenu .mmphnom span{
+  .menu-nav .mainMenu .mmphnom span {
     color: #390161;
     font-size: 14.5px;
     font-weight: 600;
-}
+  }
+
+  .contfirstSec .contfirstText {
+    font-size: 30px;
+  }
+
+  .contsecondSec {
+    background: #fff;
+    padding: 40px 20px;
+    display: block;
+  }
+
+  .contsecondSec .cssLeft .csslItem i {
+    color: #4b0082;
+    font-size: 20px;
+  }
+
+  .contsecondSec .cssLeft .csslItem span {
+    color: #3d0069;
+    font-size: 17px;
+    width: calc(100% - 50px);
+  }
+
+  .contsecondSec .cssRight .cssrForm form .cssrfGroup1 input {
+    /* width: 165px; */
+    width: 100%;
+    height: 35px;
+    border: 1px solid #a8a7d4;
+    border-radius: 4px;
+    outline: none;
+    background-color: #ebe6fb;
+    padding-left: 10px;
+    color: #2e004f;
+  }
+
+  .contsecondSec .cssRight .cssrForm form .cssrfGroup2 input {
+    width: calc(100% - 14px);
+    height: 35px;
+    border: 1px solid #a8a7d4;
+    border-radius: 4px;
+    outline: none;
+    background-color: #ebe6fb;
+    padding-left: 10px;
+    color: #2e004f;
+  }
+
+  .contsecondSec .cssRight .cssrForm form .cssrfGroup2 textarea {
+    width: calc(100% - 14px);
+    height: 100px;
+    border: 1px solid #a8a7d4;
+    border-radius: 4px;
+    outline: none;
+    background-color: #ebe6fb;
+    padding-left: 10px;
+    padding-top: 10px;
+    resize: vertical;
+    color: #2e004f;
+  }
+
+  .contsecondSec .cssRight .cssrForm form button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #4b0082;
+    font-size: 15px;
+    font-weight: 600;
+  }
 
   .sixthSec .siseMain {
     padding: 20px 30px;
@@ -462,29 +592,5 @@ footer .footerAll .fasecondPart img {
 
   #toggle-bar {
     display: none;
-  }
-}
-
-@media (max-width: 777px) {
-  .absecondSec {
-    padding: 50px 30px;
-    background-color: aliceblue;
-    background-size: cover;
-  }
-
-  .absecondSec p {
-    color: #5e595f;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-  }
-
-  .absecondSec .abssLink a {
-    text-decoration: none;
-    color: #3d0069;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    transition: 0.25s all ease;
   }
 }

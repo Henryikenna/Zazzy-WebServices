@@ -1,0 +1,323 @@
+<!--<div class="load" id="load">
+        <div class="custom-loader" id="custom-loader"></div>
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            // Hide the loader after 5 seconds
+            setTimeout(function () {
+                document.getElementById('load').style.display = 'none';
+            }, 1500);
+        });
+
+    </script>-->
+
+
+
+    <!-- <div class="menu-container">
+            <button class="menu-btn">
+                <span class="menu-btn__burger"></span>
+            </button>
+            <ul class="menu">
+                <button class="close-btn">&times;</button>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li style="border-bottom: 1px solid #fff;"><a href="#">Contact</a></li>
+
+                    <li style="display: flex; align-items: center; gap: 20px; font-size: 20px;">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-telegram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </ul>
+        </div> -->
+
+
+
+
+        /* *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .text-fx {
+            overflow: hidden;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+
+            to {
+                transform: translateY(0%);
+            }
+        } */
+
+
+
+
+
+
+        /* .load {
+    opacity: .9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.custom-loader {
+    width: 50px;
+    height: 24px;
+    opacity: 1;
+    background:
+        radial-gradient(circle closest-side, #4B0082 90%, #0000) 0% 50%,
+        radial-gradient(circle closest-side, #4B0082 90%, #0000) 50% 50%,
+        radial-gradient(circle closest-side, #4B0082 90%, #0000) 100% 50%;
+    background-size: calc(100%/3) 12px;
+    background-repeat: no-repeat;
+    animation: d3 1s infinite linear;
+}
+
+@keyframes d3 {
+    20% {
+        background-position: 0% 0%, 50% 50%, 100% 50%
+    }
+
+    40% {
+        background-position: 0% 100%, 50% 0%, 100% 50%
+    }
+
+    60% {
+        background-position: 0% 50%, 50% 100%, 100% 0%
+    }
+
+    80% {
+        background-position: 0% 50%, 50% 50%, 100% 100%
+    }
+} */
+
+
+
+
+
+
+/* .sixthSec .siseMain .siseRight {
+    display: flex;
+    align-items: center;
+} */
+
+ /* .sixthSec .siseMain .siseRight input {
+    width: 250px;
+    height: 51.2px;
+    padding-left: 16px;
+    color: #7a7a7a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+
+.sixthSec .siseMain .siseRight button {
+    color: #fff;
+    height: 55px;
+    width: 130px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #4B0082;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+} */
+
+
+
+
+
+
+
+/* .menu-container {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0px;
+        background-color: #4B0082;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+    }
+
+    .menu ul {
+        margin: 70px -40px;
+        list-style: none;
+    }
+
+    .menu ul li {
+        padding: 20px;
+        border: 1px solid #fff;
+        border-left: none;
+        border-bottom: none;
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 20.5px;
+    }
+
+    .menu-btn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 20px;
+        color: #333;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 16px;
+    }
+
+    .menu-btn__burger {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-btn__burger:before,
+    .menu-btn__burger:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-btn__burger:before {
+        top: -10px;
+    }
+
+    .menu-btn__burger:after {
+        bottom: -10px;
+    }
+
+    .menu--open {
+        display: block;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 30px;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        color: #fff;
+        display: none;
+        z-index: 999999999999;
+    }
+
+    .menu-container .close-btn {
+        display: block;
+    } */
+
+
+
+
+
+
+
+
+
+    /* .sixthSec .siseMain .siseRight {
+        display: block;
+    }
+
+    .sixthSec .siseMain .siseRight input {
+        width: calc(100% - 10%);
+        height: 51.2px;
+        padding-left: 16px;
+        color: #7a7a7a;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        outline: none;
+        border: none;
+    }
+
+    .sixthSec .siseMain .siseRight button {
+        color: #fff;
+        height: 55px;
+        width: calc(100% - 11px);
+        font-size: 14px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #4B0082;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    } */
+
+
+
+
+
+
+
+
+        // const menuBtn = document.querySelector(".menu-btn");
+        // const menu = document.querySelector(".menu");
+        // const closeBtn = document.querySelector(".close-btn");
+
+        // let menuOpen = false;
+
+        // menuBtn.addEventListener("click", () => {
+        //     if (!menuOpen) {
+        //         menu.classList.add("menu--open");
+        //         menuOpen = true;
+        //     } else {
+        //         menu.classList.remove("menu--open");
+        //         menuOpen = false;
+        //     }
+        // });
+
+        // closeBtn.addEventListener("click", () => {
+        //     menu.classList.remove("menu--open");
+        //     menuOpen = false;
+        // });
