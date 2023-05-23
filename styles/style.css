@@ -320,8 +320,10 @@ header .hrightSide .hrssocialLinks .phno i {
 
 .fourthSec .fosefirstPart .fosefpimages {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: auto;
+  justify-content: left;
+  gap: 3px;
+  padding: 0px 5px;
 }
 
 .fourthSec .fosefirstPart .fosefpimages img {
