@@ -125,7 +125,7 @@ header .hrightSide .hrssocialLinks .phno i {
 .glfirstSection {
   background-color: aliceblue;
   background-size: cover;
-  padding: 100px;
+  padding: 100px 5px;
 }
 
 .glfirstSection .glfsheadText {
@@ -145,16 +145,29 @@ header .hrightSide .hrssocialLinks .phno i {
   font-weight: 600;
 }
 
+.glfirstSection .glfsimageGrid {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  overflow-x: auto;
+  width: 100%;
+  gap: 10px;
+}
+
 .glfirstSection .glfsimageGrid span {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
+  align-items: left;
+  justify-content: left;
+  gap: 10px;
+  width: 100%;
 }
 
 .glfirstSection .glfsimageGrid span a img {
   width: 350px;
+}
+
+.glfirstSection .glfsimageGrid span a img:hover{
+  opacity: 0.96;
 }
 
 .sixthSec .siseMain {
@@ -370,7 +383,7 @@ footer .footerAll .fasecondPart img {
   .glfirstSection {
     background-color: aliceblue;
     background-size: cover;
-    padding: 80px 10px;
+    padding: 80px 5px;
   }
 
   .glfirstSection .glfsheadText {
@@ -390,16 +403,24 @@ footer .footerAll .fasecondPart img {
     font-weight: 600;
   }
 
+  .glfirstSection .glfsimageGrid {
+    display: flex;
+  align-items: left;
+  justify-content: left;
+  gap: 10px;
+  width: 100%;
+  }
+
   .glfirstSection .glfsimageGrid span {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+  align-items: left;
+  justify-content: left;
+  gap: 10px;
+  width: 100%;
   }
 
   .glfirstSection .glfsimageGrid span a img {
-    width: calc(100% - 30px);
+    width: 350px;
   }
 
   .sixthSec .siseMain {

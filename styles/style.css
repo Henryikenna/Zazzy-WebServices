@@ -678,9 +678,8 @@ footer .footerAll .fasecondPart img {
   }
 
   .fourthSec .fosefirstPart .fosefpimages {
-    display: block;
-    align-items: center;
-    justify-content: center;
+    overflow-x: auto;
+    justify-content: left;
   }
 
   .fourthSec .fosefirstPart .fosefpimages img {
