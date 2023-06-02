@@ -321,3 +321,207 @@
         //     menu.classList.remove("menu--open");
         //     menuOpen = false;
         // });
+
+
+
+
+
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="shortcut icon" type="image/jpg" href="imgs/zwbIcon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="script.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <title>Zazzy Web Services - Contact Us</title>
+</head>
+
+<body>
+
+    <div class="floatingButtons">
+        <section class="floatingButton">
+            <section class="whatsappButton">
+                <a href=""><i class="fab fa-whatsapp"></i></a>
+            </section>
+        </section>
+    </div>
+
+    <header>
+        <div class="hleftSide">
+            <a href="index.html"><img src="imgs/Zazzy web services transbg.png" alt="" /></a>
+        </div>
+        <div class="hrightSide">
+            <section class="hrsmainMenu">
+                <a class="mmHome" href="index.html">Home</a>
+                <a class="mmaboutUs" href="about-us.html">About Us</a>
+                <a class="mmServices" href="gallery.html">Gallery</a>
+                <a class="mmContact" style="font-weight: 500;" href="#">Contact</a>
+            </section>
+            <section class="hrssocialLinks">
+                <a href="https://www.instagram.com/zazzygraphics/"><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-telegram"></i></a>
+                <a href="https://twitter.com/zazzygraphics/"><i class="fab fa-twitter"></i></a>
+                <span class="blinee">|</span>
+                <span class="phno"><i class="fa fa-phone"></i> <span>08157449599</span></span>
+            </section>
+        </div>
+
+        <nav class="menu-nav" style="width: 500px">
+            <div class="tootle-menu">
+                <h1 id="toggle-bar">☰</h1>
+            </div>
+            <ul class="mainMenu" style="padding-top: 15px">
+                <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+                <li><i class="fas fa-info-circle"></i><a href="about-us.html">About Us</a></li>
+                <li><i class="far fa-images"></i><a href="gallery.html">Gallery</a></li>
+                <li><i class="far fa-address-book"></i><a href="#">Contact</a></li>
+                <br>
+                <span class="mmphnom"><i class="fa fa-phone"></i> <span>08157449599</span></span>
+                <br><br>
+                <span class="mmSocials">
+                    <li>
+                        <a href="https://www.instagram.com/zazzygraphics/"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-telegram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/zazzygraphics/"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </span>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contfirstSec">
+        <span class="contfirstText">Contact Us</span>
+    </section>
+
+    <div class="contsecondSec">
+        <section class="cssLeft">
+            <section class="csslItem"><i class="fa fa-map-marker"></i> <span>Agbani Road, Enugu</span></section>
+            <section class="csslItem"><i class="far fa-envelope"></i> <span>zazzygraphics@gmail.com</span></section>
+            <section class="csslItem"><i class="fab fa-whatsapp"></i> <span>08157449599</span></section>
+        </section>
+        <section class="cssRight">
+            <section class="cssrForm">
+                <form method="post" name="emailContact">
+                    <label class="cssrfinputTitle">Name <em class="redasterisk">*</em></label>
+                    <span class="cssrfGroup1">
+                        <input type="text" name="firstName" placeholder="First Name" id="" required>
+                        <input type="text" name="lastName" placeholder="Last Name" id="" required>
+                    </span>
+                    <br>
+                    <span class="cssrfGroup2">
+                        <label class="cssrfinputTitle">Phone <em class="redasterisk">*</em></label>
+                        <input type="tel" name="userPhone" placeholder="Phone No." id="" required>
+                        <br><br>
+                        <label class="cssrfinputTitle">Email <em class="redasterisk">*</em></label>
+                        <input type="email" name="userEmail" placeholder="example@gmail.com" id="" required>
+                        <br><br>
+                        <label class="cssrfinputTitle">Message <em class="redasterisk">*</em></label>
+                        <textarea name="userMessage" id="" placeholder="Write your Message..." cols="30" rows="10" required></textarea>
+                    </span>
+                    <br><br>
+                    <input class="submitButton" type="submit" name="send" value="Submit">
+                </form>
+            </section>
+        </section>
+    </div>
+
+    <div class="sixthSec">
+        <section class="siseMain">
+            <section class="siseLeft">
+                <p class="siselFirst">Subscribe to Newsletter</p>
+                <p class="siseSecond">Get updated on Business Tips, Developments, promos, special offers etc…. (we don’t
+                    SPAM)</p>
+            </section>
+            <section class="siseRight">
+                <!-- <input type="text" placeholder="Your Email:">
+                <button href="">Subscribe Now</button> -->
+
+                <div class="siserinputGroup">
+                    <input type="email" class="siserigInput" id="Email" name="Email" placeholder="Your Email: "
+                        autocomplete="off">
+                    <span class="siserigButton"><button>Subscribe</button></span>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footerAll">
+            <section class="fafirstPartt">
+                <section class="fatexts fatexts1">
+                    <p class="fatTitle">FEATURES</p>
+
+                    <section class="fatLinks">
+                        <a href="javascript:void(0);" class="fatLink">Faster Delivery Time</a>
+                        <a href="javascript:void(0);" class="fatLink">Premium Designs</a>
+                        <a href="javascript:void(0);" class="fatLink">Page Support</a>
+                        <a href="javascript:void(0);" class="fatLink">Brand Advisory</a>
+                        <a href="javascript:void(0);" class="fatLink">SEO</a>
+                    </section>
+                </section>
+                <section class="fatexts fatexts2">
+                    <p class="fatTitle">COMMUNITY</p>
+
+                    <section class="fatLinks">
+                        <a href="javascript:void(0);" class="fatLink">SME Hub</a>
+                        <a href="javascript:void(0);" class="fatLink">Design Community</a>
+                        <a href="javascript:void(0);" class="fatLink">Affiliates</a>
+                        <a href="javascript:void(0);" class="fatLink">Partners</a>
+                    </section>
+                </section>
+                <section class="fatexts fatexts3">
+                    <p class="fatTitle">ABOUT</p>
+
+                    <section class="fatLinks">
+                        <a href="javascript:void(0);" class="fatLink">Stories</a>
+                        <a href="javascript:void(0);" class="fatLink">Community</a>
+                        <a href="javascript:void(0);" class="fatLink">Blog</a>
+                        <a href="javascript:void(0);" class="fatLink">Careers</a>
+                        <a href="javascript:void(0);" class="fatLink">Brand Assets</a>
+                    </section>
+                </section>
+            </section>
+
+            <section class="fasecondPart">
+                <img src="imgs/Zazzy web services transbg.png" alt="">
+            </section>
+        </div>
+    </footer>
+
+    <script>
+
+
+        function toggleMenu() {
+            let getMenu = document.querySelector(".mainMenu");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu); 
+    </script>
+</body>
+
+</html>

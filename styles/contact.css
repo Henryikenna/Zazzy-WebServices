@@ -2,11 +2,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
-  background-image: linear-gradient(45deg, #4b0082, #ffff00);
+  background-image: linear-gradient(45deg, #4b0082, #e8f838);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
   padding: 0;
+}
+.floatingButtons .floatingButton {
+  position: fixed;
+  bottom: 30px;
+  left: 40px;
+}
+
+.floatingButtons .floatingButton .whatsappButton a i {
+  color: #fff;
+  font-size: 40px;
+  background-image: linear-gradient(135deg, #27e76d, #1b9e4b);
+  padding: 20px;
+  border-radius: 50%;
+  animation: moveup 1s ease-out infinite;
+}
+.floatingButtons .floatingButton .whatsappButton a i:hover{
+  opacity: .9;
+}
+
+@keyframes moveup {
+  0% {
+      transform: translateY(0px);
+  }
+
+  25% {
+      transform: translateY(1.25px);
+  }
+
+  50% {
+      transform: translateY(2.5px);
+  }
+
+  75% {
+      transform: translateY(1.25px);
+  }
+
+  100% {
+      transform: translateY(0px);
+  }
 }
 
 header .menu-nav {
@@ -162,6 +201,22 @@ header .hrightSide .hrssocialLinks .phno i {
   font-size: 20px;
 }
 
+.contsecondSec .cssRight .cssrForm form .success{
+  background: #01cf01d1;
+  padding: 10px;
+  border-radius: 3px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.contsecondSec .cssRight .cssrForm form .success i{
+  padding-left: 3px;
+}
+
 .contsecondSec .cssRight .cssrForm form .cssrfinputTitle {
   display: block;
   padding-bottom: 5px;
@@ -173,6 +228,7 @@ header .hrightSide .hrssocialLinks .phno i {
 .contsecondSec .cssRight .cssrForm form .cssrfinputTitle .redasterisk {
   color: red;
   font-weight: 400;
+  font-style: normal;
 }
 
 .contsecondSec .cssRight .cssrForm form .cssrfGroup1 {
@@ -190,6 +246,7 @@ header .hrightSide .hrssocialLinks .phno i {
   outline: none;
   background-color: #ebe6fb;
   padding-left: 10px;
+  font-family: "Poppins", sans-serif;
   color: #2e004f;
 }
 .contsecondSec .cssRight .cssrForm form .cssrfGroup2 input {
@@ -200,6 +257,7 @@ header .hrightSide .hrssocialLinks .phno i {
   outline: none;
   background-color: #ebe6fb;
   padding-left: 10px;
+  font-family: "Poppins", sans-serif;
   color: #2e004f;
 }
 .contsecondSec .cssRight .cssrForm form .cssrfGroup2 textarea {
@@ -212,10 +270,12 @@ header .hrightSide .hrssocialLinks .phno i {
   padding-left: 10px;
   padding-top: 10px;
   resize: vertical;
+  font-family: "Poppins", sans-serif;
   color: #2e004f;
 }
-.contsecondSec .cssRight .cssrForm form button {
-  width: calc(220px * 2 + 46px);
+.contsecondSec .cssRight .cssrForm form .submitButton {
+  /* width: calc(220px * 2 + 45px); */
+  width: 100%;
   height: 50px;
   border: none;
   border-radius: 4px;
@@ -223,6 +283,7 @@ header .hrightSide .hrssocialLinks .phno i {
   background-color: #4b0082;
   font-size: 15px;
   font-weight: 600;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
 

@@ -2,11 +2,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
-  background-image: linear-gradient(45deg, #4b0082, #ffff00);
+  background-image: linear-gradient(45deg, #4b0082, #e8f838);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
   padding: 0;
+}
+.floatingButtons .floatingButton {
+  position: fixed;
+  bottom: 30px;
+  left: 40px;
+}
+
+.floatingButtons .floatingButton .whatsappButton a i {
+  color: #fff;
+  font-size: 40px;
+  background-image: linear-gradient(135deg, #27e76d, #1b9e4b);
+  padding: 20px;
+  border-radius: 50%;
+  animation: moveup 1s ease-out infinite;
+}
+.floatingButtons .floatingButton .whatsappButton a i:hover{
+  opacity: .9;
+}
+
+@keyframes moveup {
+  0% {
+      transform: translateY(0px);
+  }
+
+  25% {
+      transform: translateY(1.25px);
+  }
+
+  50% {
+      transform: translateY(2.5px);
+  }
+
+  75% {
+      transform: translateY(1.25px);
+  }
+
+  100% {
+      transform: translateY(0px);
+  }
 }
 
 header .menu-nav {

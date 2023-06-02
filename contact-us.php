@@ -23,6 +23,37 @@
 </head>
 
 <body>
+
+<?php 
+
+if (!empty($_POST["send"])) {
+    $firstName = $_POST["firstName"];
+    $lastName = $_POST["lastName"];
+    $userPhone = $_POST["userPhone"];
+    $userEmail = $_POST["userEmail"];
+    $userMessage = $_POST["userMessage"];
+    $toEmail = "zazzygraphics@gmail.com";
+
+    $mailHeaders = "Name: " . $firstName + $lastName .
+    "\r\n Phone No.: " . $userPhone .
+    "\r\n Email: " . $userEmail .
+    "\r\n Message: " . $userMessage . "\r\n";
+
+    if (mail($toEmail, $firstName, $lastName, $mailHeaders)) {
+        $message = "Your Information is Recieved Successfully.";
+    }
+}
+
+?>
+
+    <div class="floatingButtons">
+        <section class="floatingButton">
+            <section class="whatsappButton">
+                <a href=""><i class="fab fa-whatsapp"></i></a>
+            </section>
+        </section>
+    </div>
+
     <header>
         <div class="hleftSide">
             <a href="index.html"><img src="imgs/Zazzy web services transbg.png" alt="" /></a>
@@ -80,31 +111,36 @@
 
     <div class="contsecondSec">
         <section class="cssLeft">
-            <section class="csslItem"><i class="fa fa-map-marker"></i> <span>Davis Lodge, Enugu</span></section>
-            <section class="csslItem"><i class="far fa-envelope"></i> <span>zazzywebservices@gmail.com</span></section>
+            <section class="csslItem"><i class="fa fa-map-marker"></i> <span>Agbani Road, Enugu</span></section>
+            <section class="csslItem"><i class="far fa-envelope"></i> <span>zazzygraphics@gmail.com</span></section>
             <section class="csslItem"><i class="fab fa-whatsapp"></i> <span>08157449599</span></section>
         </section>
         <section class="cssRight">
             <section class="cssrForm">
-                <form action="">
-                    <span class="cssrfinputTitle">Name <span class="redasterisk">*</span></span>
+                <form method="post" name="emailContact">
+                    <?php if(!empty($message)){ ?>
+                    <div class="success">
+                        <strong><?php echo $message; ?><i class="fas fa-check-circle"></i></strong>
+                    </div>
+                    <?php } ?>
+                    <label class="cssrfinputTitle">Name <em class="redasterisk">*</em></label>
                     <span class="cssrfGroup1">
-                        <input type="text" name="" id="" required>
-                        <input type="text" name="" id="" required>
+                        <input type="text" name="firstName" placeholder="First Name" id="" required>
+                        <input type="text" name="lastName" placeholder="Last Name" id="" required>
                     </span>
                     <br>
                     <span class="cssrfGroup2">
-                        <span class="cssrfinputTitle">Phone <span class="redasterisk">*</span></span>
-                        <input type="tel" name="" id="" required>
+                        <label class="cssrfinputTitle">Phone <em class="redasterisk">*</em></label>
+                        <input type="tel" name="userPhone" placeholder="Phone No." id="" required>
                         <br><br>
-                        <span class="cssrfinputTitle">Email <span class="redasterisk">*</span></span>
-                        <input type="email" name="" id="" required>
+                        <label class="cssrfinputTitle">Email <em class="redasterisk">*</em></label>
+                        <input type="email" name="userEmail" placeholder="example@gmail.com" id="" required>
                         <br><br>
-                        <span class="cssrfinputTitle">Message <span class="redasterisk">*</span></span>
-                        <textarea name="" id="" cols="30" rows="10" required></textarea>
+                        <label class="cssrfinputTitle">Message <em class="redasterisk">*</em></label>
+                        <textarea name="userMessage" id="" placeholder="Write your Message..." cols="30" rows="10" required></textarea>
                     </span>
                     <br><br>
-                    <button>Submit</button>
+                    <input class="submitButton" type="submit" name="send" value="Submit">
                 </form>
             </section>
         </section>
