@@ -457,7 +457,7 @@ header .hrightSide .hrssocialLinks .phno i {
   background-color: #fff;
 }
 
-.siserinputGroup .siserigButton button {
+.siserinputGroup .siserigButton input {
   color: #fff;
   height: 55px;
   width: 130px;
@@ -471,6 +471,22 @@ header .hrightSide .hrssocialLinks .phno i {
   font-weight: 500;
   border-radius: 0 6px 6px 0;
   cursor: pointer;
+}
+
+.siserinputGroup .alerrt{
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.siserinputGroup .alerror{
+  color: #be0404;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+.siserinputGroup .alsuccess{
+  color: #028e0e;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
 }
 
 footer {
@@ -809,7 +825,7 @@ footer .footerAll .fasecondPart img {
     background-color: #fff;
   }
 
-  .siserinputGroup .siserigButton button {
+  .siserinputGroup .siserigButton input {
     color: #fff;
     height: 55px;
     width: calc(100% - 4%);

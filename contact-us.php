@@ -32,15 +32,18 @@ if (!empty($_POST["send"])) {
     $userPhone = $_POST["userPhone"];
     $userEmail = $_POST["userEmail"];
     $userMessage = $_POST["userMessage"];
-    $toEmail = "zazzygraphics@gmail.com";
+    // $toEmail = "zazzygraphics@gmail.com";
+    $toEmail = "ikennaunegbu10@gmail.com";
+    
 
-    $mailHeaders = "Name: " . $firstName + $lastName .
+    $mailHeaders = "First Name: " . $firstName .
+    "\r\n Last Name: " . $lastName .
     "\r\n Phone No.: " . $userPhone .
     "\r\n Email: " . $userEmail .
     "\r\n Message: " . $userMessage . "\r\n";
 
     if (mail($toEmail, $firstName, $lastName, $mailHeaders)) {
-        $message = "Your Information is Recieved Successfully.";
+        $message = "Your Information was Recieved Successfully.";
     }
 }
 
