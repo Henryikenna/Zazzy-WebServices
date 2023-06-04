@@ -9,6 +9,10 @@ body {
   padding: 0;
 }
 
+.floatingButtons{
+  z-index: 9999999999999999999;
+}
+
 .floatingButtons .floatingButton {
   position: fixed;
   bottom: 30px;
@@ -200,14 +204,17 @@ header .hrightSide .hrssocialLinks .phno i {
   justify-content: left;
   gap: 10px;
   width: 100%;
+  scroll-snap-type: x mandatory;
 }
 
 .glfirstSection .glfsimageGrid span a img {
   width: 350px;
+  border-radius: 5px;
+  scroll-snap-align: start;
 }
 
 .glfirstSection .glfsimageGrid span a img:hover{
-  opacity: 0.96;
+  transform: scale(102%);
 }
 
 .sixthSec .siseMain {

@@ -8,6 +8,9 @@ body {
   margin: 0;
   padding: 0;
 }
+.floatingButtons{
+  z-index: 9999999999999999999;
+}
 .floatingButtons .floatingButton {
   position: fixed;
   bottom: 30px;

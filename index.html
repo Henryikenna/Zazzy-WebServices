@@ -30,7 +30,7 @@
             </section>
         </section>
     </div>
-
+    
     <header>
         <div class="hleftSide">
             <a href="#"><img src="imgs/Zazzy web services transbg.png" alt="" /></a>
@@ -40,13 +40,13 @@
                 <a class="mmHome" style="font-weight: 500;" href="#">Home</a>
                 <a class="mmaboutUs" href="about-us.html">About Us</a>
                 <a class="mmServices" href="gallery.html">Gallery</a>
-                <a class="mmContact" href="contact-us.php">Contact</a>
+                <a class="mmContact" href="contact-us.html">Contact</a>
             </section>
             <section class="hrssocialLinks">
                 <a href="https://www.instagram.com/zazzygraphics/"><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/zazzygraphics/"><i class="fab fa-facebook"></i></a>
                 <a href=""><i class="fab fa-telegram"></i></a>
-                <a href="https://twitter.com/zazzygraphics/"><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
                 <span class="blinee">|</span>
                 <span class="phno"><i class="fa fa-phone"></i> <span>08157449599</span></span>
             </section>
@@ -64,15 +64,15 @@
                 <li><i class="fa fa-home"></i><a href="#">Home</a></li>
                 <li><i class="fas fa-info-circle"></i><a href="about-us.html">About Us</a></li>
                 <li><i class="far fa-images"></i><a href="gallery.html">Gallery</a></li>
-                <li><i class="far fa-address-book"></i><a href="contact-us.php">Contact</a></li>
+                <li><i class="far fa-address-book"></i><a href="contact-us.html">Contact</a></li>
                 <br>
                 <span class="mmphnom"><i class="fa fa-phone"></i> <span>08157449599</span></span>
                 <br><br>
                 <span class="mmSocials">
                     <li><a href="https://www.instagram.com/zazzygraphics/"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.facebook.com/zazzygraphics/"><i class="fab fa-facebook"></i></a></li>
                     <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                    <li><a href="https://twitter.com/zazzygraphics/"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
                 </span>
             </ul>
         </nav>
@@ -87,8 +87,7 @@
         </p>
         <p class="fsTagline">Transform Your Vision into a Beautiful Reality. We're a-Site to Behold!</p>
         <br><br><br>
-        <a class="fsgetStarted" href="https://wa.me/message/4JULBCDV73UBE1" target="_blank">Click here to get
-            started</a>
+        <a class="fsgetStarted" href="https://wa.me/message/4JULBCDV73UBE1" target="_blank">Click here to get started</a>
     </div>
 
     <div class="secondSec">
@@ -170,8 +169,7 @@
                 <p>Chat with us on your next web project</p>
             </section>
             <section class="fiseRight">
-                <a href="https://wa.me/message/4JULBCDV73UBE1" target="_blank"><i class="fab fa-whatsapp"></i> Chat
-                    Us</a>
+                <a href="https://wa.me/message/4JULBCDV73UBE1" target="_blank"><i class="fab fa-whatsapp"></i> Chat Us</a>
             </section>
         </section>
     </div>
@@ -188,38 +186,9 @@
                 <button href="">Subscribe Now</button> -->
 
                 <div class="siserinputGroup">
-                    <form action="index.php" method="post">
-                        <?php
-                        $userEmail = "";
-                        if (isset($_POST['subscribe'])) {
-                            $userEmail = $_POST['email'];
-                            if (filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
-                                $subject = "Thanks for Subscribing to our Newsletter - Zazzy Web Services";
-                                $message = "Dear {$userEmail}, \n\n  We hope this email finds you well. We are thrilled to introduce you to our web design agency, Zazzy Web Services (ZWS), where we specialize in creating captivating online experiences that drive results. \n\n In today's digital age, having a strong online presence is vital for businesses to thrive. Your website serves as the virtual face of your brand, and we understand the importance of making a lasting impression. That's why we're here to help you take your online presence to new heights. \n\n At ZWS, we combine creativity, technical expertise, and strategic thinking to deliver exceptional web design solutions tailored to your unique business needs. Our team of talented designers and developers are passionate about crafting visually stunning websites that not only look amazing but also provide seamless user experiences. \n\n\n What sets us apart: \n\n 1. Customized Designs: We believe in creating websites that reflect your brand's identity. Our team works closely with you to understand your vision, values, and goals, translating them into a visually striking and functional website. \n 2. Mobile Responsiveness: With the majority of online users accessing websites through mobile devices, we ensure that your website is fully responsive, delivering an optimal viewing experience across all screen sizes. \n 3. User-Friendly Interfaces: We prioritize user experience and usability, ensuring that your website is intuitive and easy to navigate. By implementing best practices in UX design, we enhance engagement and conversion rates. \n 4. Cutting-Edge Technologies: We stay up-to-date with the latest web design trends and technologies. From interactive elements to engaging animations, we leverage innovative tools and techniques to make your website stand out from the competition. 5. SEO-Friendly Structure: Our websites are built with SEO in mind, providing a solid foundation for search engine visibility. We optimize your website's structure, content, and meta tags to improve its ranking and attract organic traffic. 6. Ongoing Support: Our partnership doesn't end with the launch of your website. We offer continuous support and maintenance to ensure your website remains secure, up-to-date, and optimized for peak performance. \n\n Whether you're looking to revamp your existing website or create a brand-new online presence, we're here to turn your vision into reality. \n\n If you have any questions or would like to discuss your project further, please feel free to reach out to our team on Whatsapp or Call at 08157449599. \n\n Let's collaborate to create a captivating online presence that drives growth and success for your business. We look forward to hearing from you! \n\n Warm regards, \n\n Zazzy \n CEO \n Zazzy Web Services \n 08157449599";
-                                $sender = "From: ikennaunegbu10@gmail.com";
-                                if (mail($userEmail, $subject, $message, $sender)) {
-                                    ?>
-                                    <div class="alerrt alsuccess">Thanks for subscribing to our newsletter</div>
-                                    <?php
-                                    $userEmail = "";
-                                } else {
-                                    ?>
-                                    <div class="alerrt alerror">Something Occured! Failed to send your Email.</div>
-                                    <?php
-                                }
-                            } else {
-                                ?>
-                                <div class="alerrt alerror">
-                                    <?php echo $userEmail ?> is not a valid Email!
-                                </div>
-                                <?php
-                            }
-                        }
-                        ?>
-                        <input type="email" class="siserigInput" id="Email" name="email" placeholder="Your Email: "
-                            autocomplete="off" required value="<?php echo $userEmail ?>">
-                        <span class="siserigButton"><input type="submit" name="subscribe" value="Subscribe"></span>
-                    </form>
+                    <input type="email" class="siserigInput" id="Email" name="Email" placeholder="Your Email: "
+                        autocomplete="off">
+                    <span class="siserigButton"><button>Subscribe</button></span>
                 </div>
             </section>
         </section>

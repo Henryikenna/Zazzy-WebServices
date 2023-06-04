@@ -10,6 +10,10 @@ body {
   padding: 0;
 }
 
+.floatingButtons{
+  z-index: 9999999999999999999;
+}
+
 .floatingButtons .floatingButton {
   position: fixed;
   bottom: 30px;
@@ -370,6 +374,12 @@ header .hrightSide .hrssocialLinks .phno i {
 
 .fourthSec .fosefirstPart .fosefpimages img {
   width: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fourthSec .fosefirstPart .fosefpimages img:hover{
+  opacity: .97;
 }
 
 .fifthSec {
@@ -457,7 +467,7 @@ header .hrightSide .hrssocialLinks .phno i {
   background-color: #fff;
 }
 
-.siserinputGroup .siserigButton input {
+.siserinputGroup .siserigButton button {
   color: #fff;
   height: 55px;
   width: 130px;
@@ -471,22 +481,6 @@ header .hrightSide .hrssocialLinks .phno i {
   font-weight: 500;
   border-radius: 0 6px 6px 0;
   cursor: pointer;
-}
-
-.siserinputGroup .alerrt{
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.siserinputGroup .alerror{
-  color: #be0404;
-  background: #f8d7da;
-  border: 1px solid #f5c6cb;
-}
-.siserinputGroup .alsuccess{
-  color: #028e0e;
-  background: #f8d7da;
-  border: 1px solid #f5c6cb;
 }
 
 footer {
@@ -745,8 +739,11 @@ footer .footerAll .fasecondPart img {
 
   .fourthSec .fosefirstPart .fosefpimages img {
     width: 90%;
+    border-radius: 5px;
     scroll-snap-align: start;
   }
+
+  
 
   .fifthSec .fiseMain {
     padding: 20px 30px;
@@ -825,7 +822,7 @@ footer .footerAll .fasecondPart img {
     background-color: #fff;
   }
 
-  .siserinputGroup .siserigButton input {
+  .siserinputGroup .siserigButton button {
     color: #fff;
     height: 55px;
     width: calc(100% - 4%);
