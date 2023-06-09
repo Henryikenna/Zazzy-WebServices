@@ -310,6 +310,15 @@ footer .footerAll .fasecondPart img {
 }
 
 @media (max-width: 777px) {
+  .floatingButtons .floatingButton .whatsappButton a i {
+    color: #fff;
+    font-size: 35px;
+    background-image: linear-gradient(135deg, #27e76d, #1b9e4b);
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    animation: moveup 1s ease-out infinite;
+}
   body {
     background-image: linear-gradient(135deg, #4b0082, #ffff00);
     background-size: cover;
